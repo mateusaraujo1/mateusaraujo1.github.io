@@ -1,0 +1,160 @@
+/* Importação de Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --background-color: #ecf0f1;
+    --text-color: #34495e;
+    --primary-soft: rgba(52, 152, 219, 0.1);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+}
+
+p.text-justify {
+    text-align: justify;
+}
+
+/* Navbar */
+.navbar-brand {
+    color: var(--primary-color) !important;
+}
+
+/* Títulos das Seções */
+h2 {
+    color: var(--secondary-color);
+    position: relative;
+    display: inline-block;
+}
+
+.text-center h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--primary-color);
+    margin: 8px auto 0;
+}
+
+/* Foto de Perfil */
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--primary-soft);
+}
+
+/* Ícones Sociais */
+.social-icon {
+    font-size: 2rem;
+    margin-right: 15px;
+    color: var(--secondary-color);
+    transition: color 0.3s ease;
+}
+.social-icon:hover {
+    color: var(--primary-color);
+}
+
+/* Botão Primário (Download CV) */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+/* Card de Habilidades (Regra Unificada) */
+.skill-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+/* Cores Originais dos Ícones de Habilidades */
+.skill-card .fa-laravel   { color: #FF2D20; }
+.skill-card .fa-php       { color: #777BB4; }
+.skill-card .fa-vuejs     { color: #4FC08D; }
+.skill-card .fa-docker    { color: #2496ED; }
+.skill-card .fa-git-alt   { color: #F05032; }
+.skill-card .fa-html5     { color: #E34F26; }
+.skill-card .fa-css3-alt  { color: #1572B6; }
+.skill-card .fa-js        { color: #F7DF1E; }
+.skill-card .fa-bootstrap { color: #7952B3; }
+.skill-card .fa-database  { color: #4479A1; } /* Cor do MySQL */
+.skill-card .fa-wind      { color: #06B6D4; } /* Cor do Tailwind */
+.skill-card .fa-layer-group { color: var(--primary-color); } /* Cor para Filament */
+
+
+/* Card de Projetos */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card .card-title {
+    color: var(--primary-color);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.badge.bg-primary-soft {
+    background-color: var(--primary-soft) !important;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+/* Estilos para o Carrossel dentro do Card */
+.project-card .carousel {
+    border-top-left-radius: var(--bs-card-inner-border-radius);
+    border-top-right-radius: var(--bs-card-inner-border-radius);
+    overflow: hidden;
+}
+
+.project-card .carousel-item img {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Fundo das seções */
+.bg-light {
+    background-color: var(--background-color) !important;
+}
+
+/* Contato */
+.contact-item {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.contact-item:hover {
+    color: var(--primary-color);
+}
+
+.contact-item i {
+    margin-right: 8px;
+}
+
+/* Footer */
+footer.bg-dark {
+    background-color: var(--secondary-color) !important;
+}
